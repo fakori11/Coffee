@@ -29,7 +29,7 @@ export default function Categories() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-[#4A3428] mb-4">مستعد تجرب قهوة مختلفة ؟ </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#4A3428] mb-4">مستعد تجرب قهوة مختلفة؟</h2>
           <p className="text-[#6B5D52] text-lg"> </p>
         </motion.div>
 
