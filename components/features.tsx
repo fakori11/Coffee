@@ -9,13 +9,13 @@ const desserts = [
     icon: Cake,
     title: "Premium Cake",
     description: "Freshly baked cakes made daily with the finest ingredients",
-    image: "/aa.mp4", // ← الفيديو الأول من مجلد public
+    image: "aaaa.gif", // ← الفيديو الأول من مجلد public
   },
   {
     icon: Sandwich,
     title: "Delicious Donuts",
     description: "Crispy outside, fluffy inside waffles with various toppings",
-    image: "/dd.mp4", // ← الفيديو الثاني من مجلد public
+    image: "bbb.gif", 
   },
   {
     icon: Cookie,
