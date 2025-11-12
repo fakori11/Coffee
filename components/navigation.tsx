@@ -4,11 +4,8 @@ import { Coffee, Menu, Search, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Great_Vibes } from "next/font/google";
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import Image from "next/image"
+
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -22,18 +19,21 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-           <motion.div
-      className="flex items-center gap-2"
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.3 }}
-    >
-      <Coffee className="w-8 h-8 text-[#4A3428]" />
-      <span
-        className={`${greatVibes.className} text-2xl text-[#4A3428] tracking-wide mt-3`}
-      >
-        Some where
-      </span>
-    </motion.div>
+          <motion.div
+            className="flex items-center"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Coffee className="w-8 h-8 text-[#4A3428]" />
+            <Image
+              src="/download.png"
+              alt="Some where"
+              width={220}
+              height={200}
+              className="h-16 w-auto object-contain -ml-4"
+              priority
+            />
+          </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
